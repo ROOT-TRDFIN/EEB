@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>EEBEDCS</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{% static 'images/EEBElogo.png' %}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{% static 'images/EEBElogo.png' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="{% static 'css/versions.css' %}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+	<!--Slider-->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+	<!--Favicon-->
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<!--slitslider-->
+	<link rel="stylesheet" href="{% static 'css/slit-custom.css' %}">
+	
+	<script src="{% static 'js/modernizr.custom.79639.js' %}"></script>
+</head>
+<body class="seo_version">
+
+	<!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-wrapper">
+			<div class="loader-new">
+				<div class="ball"></div>
+				<div class="ball"></div>
+				<div class="ball"></div>
+			</div>
+			<div class="text">EEB Engineering Design And Consultancy Services</div>
+		</div>
+	</div>
+	<!-- END LOADER -->
+	
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="{% url 'index' %}">
+					<img src="{% static 'images/EEBEDCS.png' %}" width="280px" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-seo" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-seo">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About Us</a></li>
+						<li class="nav-item"><a class="nav-link" href="{% url 'product' %}">Our Products</a></li>
+						<li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+    
+    <div id="slider" class="sl-slider-wrapper">
+		<div class="sl-slider">
+			<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+				<div class="sl-slide-inner">
+					<div class="bg-img bg-img-1"></div>
+					<h2>Bringing ideas and innovations to life </h2>
+					<blockquote><p>Unleashing human energy through technology and innovation for an inclusive and sustainable future. </p>
+					<a href="#" class="bttn-new">Started Today</a>
+					</blockquote>
+				</div>
+			</div>
+			
+			<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+				<div class="sl-slide-inner">
+					<div class="bg-img bg-img-2"></div>
+					<h2>Building the future on the foundation of excellence</h2>
+					<blockquote><p>With our relentless pursuit of excellence, we create innovative and niche products for a better future.</p>
+					<a href="#" class="bttn-new">Started Today</a>
+					</blockquote>
+				</div>
+			</div>
+		</div><!-- /sl-slider -->
+
+		<nav id="nav-dots" class="nav-dots">
+			<span class="nav-dot-current"></span>
+			<span></span>
+		</nav>
+
+	</div><!-- /slider-wrapper -->
+
+    <div id="about" class="section wb nopadtop">
+        <div class="container">
+            <div class="row">
+				<div class="col-md-6 m40">
+                    <div class="message-box">
+                        <h4>about us</h4>
+                        <h2>Welcome to EEB Engineering.</h2>
+                        <b><p class="quotes"> “The future is what we invent together”</p></b>
+						<p> EEB Engineering is a visionary engineering company that combines expertise, innovation, and a deep commitment to sustainability. We are driven by a passion to create a better world through groundbreaking engineering solutions. With a collaborative approach and a diverse team of exceptional professionals, we strive to exceed expectations and drive transformative outcomes. By embracing the latest technologies, fostering creativity, and building strong partnerships, we engineer excellence in every project. Join us on this exciting journey as we empower innovation, shape a sustainable future, and make a positive impact on society.</p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				
+                <div class="col-md-6">
+                    <div class="post-media wow fadeIn">
+                        <img src="{% static 'images/about_01.jpg' %}" alt="" class="img-fluid">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+                
+            </div><!-- end row -->
+			
+			<div class="row vission-and-mission">
+				<div class="col-md-12">
+					<ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
+						<li class="nav-item"><a class="nav-link active" href="#tab_a" data-toggle="tab">Our Mission</a></li>
+						<li class="nav-item"><a class="nav-link" href="#tab_b" data-toggle="tab">Our Vission</a></li>				
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane fade show active" id="tab_a">
+							<div class="box-inner-m">
+								<p><b>Development of new technologies:</b> EEB Engineering aims to develop innovative technologies that address the evolving needs of the engineering industry.</p>
+                                <p><b>World-class products:</b> The company is dedicated to providing high-quality products that meet the standards of excellence.</p>
+                                <p><b>Exceptional consultancy services:</b> EEB Engineering offers consultancy services to assist clients in finding practical and efficient solutions for various fields.</p>
+                                <p><b>Collaboration and expertise: </b>The company leverages its expertise and adopts a collaborative approach to solve challenges and meet the evolving demands of the industry.</p>
+                                <p><b>Empowerment of clients and partners:</b> EEB Engineering strives to empower its clients and partners by providing cutting-edge innovations that optimise their operations and enable sustainable growth.</p>
+                                <p><b>Customer-centric focus:</b> The company places great importance on customer satisfaction and aims to make a lasting impact by driving digital transformation and fostering technological advancements.</p>
+                                <p><b>Contribution to society:</b> EEB Engineering adheres to ESG goals, actively contributing to a sustainable future. We prioritise environmental sustainability by reducing carbon emissions and promoting energy efficiency. Our clay bottle innovation exemplifies our commitment to society, promoting eco-friendly practices for a greener world.</p>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="tab_b">
+							<div class="box-inner-m">
+								<p>EEB Engineering Design and Consultancy Services Pvt. Ltd. has a clear vision of being a leader in finding smart and robust solutions for the engineering industry. The company aims to push the boundaries of innovation and technology to create a positive impact on society. Through our innovative solutions and consultancy expertise, we aim to make significant contributions to humanity, addressing pressing global issues and driving positive transformations</p>
+                                <p>EEB Engineering envisions a future where digital transformation benefits all and contributes to building an inclusive and sustainable world. By evolving the next generation of engineering technology, EEB Engineering strives to be a benchmark in the industry and make significant contributions to humanity through its innovative solutions.</p>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+			
+			<hr class="hr1">
+			
+			<div class="section-title text-center">               
+                <h3>Why Choose Us</h3>
+                <p class="lead">We offer unlimited solutions to all your business needs. in the installation package we prepare search engine optimization, social media support, we provide corporate identity and graphic design services.</p>
+            </div><!-- end title -->
+			
+			<div class="seo-services row clearfix">
+                <div class="col-md-6 col-xs-12">
+					<div class="why-img-box">
+						<img src="{% static 'images/future.jpeg' %}" class="img-fluid" alt="" />
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-md-6 col-xs-12">
+					<div class="why-dit">
+						<h4>Core Values</h4>
+						<p><b>Innovation:</b> EEB Engineering believes in the power of innovation to drive progress and create transformative solutions. The company encourages a culture of creativity, exploration, and continuous improvement, fostering an environment that nurtures innovative thinking.</p>
+						<p><b>Excellence: </b>EEB Engineering is committed to excellence in all aspects of its operations. The company strives for the highest standards of quality, professionalism, and expertise in delivering products and services that exceed client expectations.</p>
+						<p><b>Durability:</b> By embracing these values and aligning its actions with its vision and mission, EEB Engineering Design and Consultancy Services Pvt. Ltd. aims to be a trusted partner, a driving force for innovation, and a catalyst for positive change in the engineering industry.</p>
+					</div>
+                </div><!-- end col -->
+				
+				<div class="col-md-6 col-xs-12">
+					<div class="why-dit">
+						<h4>Future Goal:</h4>
+						<p>EEB Engineering Design and Consultancy Services Pvt. Ltd. aspires to be a global leader in innovating futuristic products. The company firmly believes that technologies, when designed with futuristic goals in mind, can drive growth and create a safer future for everyone. With the expertise and experience of their professionally trained technocrats, EEB Engineering is committed to delivering positive and consistent outcomes through state-of-the-art products and services.</p>
+						<p>By positioning themselves at the forefront of innovation, EEB Engineering aims to shape the future by developing cutting-edge solutions that address the evolving needs of various industries. The company's goal is to create products and services that not only meet the present requirements but also anticipate future challenges and opportunities.</p>
+						<p>With a focus on technological advancements, EEB Engineering Design and Consultancy Services Pvt. Ltd. aims to contribute to the growth and progress of society by providing innovative solutions that drive efficiency, sustainability, and improved quality of life. By collaborating with clients, partners, and stakeholders, EEB Engineering envisions a future where the power of innovation brings about positive change and helps create a safer, more prosperous world for all.
+						</p>
+					</div>
+                </div><!-- end col -->
+				
+                <div class="col-md-6 col-xs-12">
+					<div class="why-img-box">
+						<img src="{% static 'images/about1.jpg' %}" class="img-fluid" alt="" />
+					</div>
+                </div><!-- end col -->
+            </div><!-- end how-its-work -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div id="services" class="section lb">
+        <div class="container-fluid">
+			<div class="container">
+				<div class="section-title text-center">
+			 		<h3>Our Projects</h3>
+					<p class="lead">Since its inception, EEB has been spearheading, executing, and managing pioneering and prestigious projects that will be helpful for the Environment sector, and Public sector. Our list of projects.</p>
+				</div><!-- end title -->
+			</div>
+            <div class="row text-center">
+				<div class="owl-services-seo owl-carousel owl-theme">
+					<div class="text-center">
+						<div class="service-widget">
+							<div class="post-media wow fadeIn">
+								<img src="{% static 'images/domimg/Geodesic dome m 0bfbcf81-299a-4ec3-b42c-e79b61c7e439.png' %}" width="50px" alt="" class="img-fluid img-rounded">
+							</div>
+							<a href="{% url 'domeindex' %}" target="_blank"><h3>Geodesic Dome</h3></a>
+							<p>Dive into the world of avant-garde architecture where form meets function in a symphony of geometric elegance. Our geodesic domes redefine spatial dynamics, encapsulating an ethos of structural integrity fused with aesthetic prowess. </p>
+						</div><!-- end service -->
+					</div><!-- end col -->
+
+					<div class="text-center">
+						<div class="service-widget">
+							<div class="post-media wow fadeIn">
+								<img src="{% static 'images/floatimg/5 1.png' %}" alt="" class="img-fluid img-rounded">
+							</div>
+							<a href="{% url 'floatation' %}"> <h3>Floatation Tank</h3></a>
+							<p>Welcome to a world where gravity disappears, stress evaporates, and tranquility becomes your new reality. Dive into the extraordinary experience of floatation tank therapy, where your mind and body find perfect harmony.</p>
+						</div><!-- end service -->
+					</div><!-- end col -->
+
+					<div class="text-center">
+						<div class="service-widget">
+							<div class="post-media wow fadeIn">
+								<img src="{% static 'images/Ampibimg/photo3.jpg' %}" alt="" class="img-fluid img-rounded">
+							</div>
+							<a href="{% url 'ampibious' %}"><h3>Amphibious Cycle</h3></a>
+							<p>An amphibious electric cycle is a unique vehicle designed to operate both on land and in water. Combining the functionality of a regular electric bicycle with aquatic capabilities, it offers an innovative way to navigate diverse terrains </p>
+						</div><!-- end service -->
+					</div><!-- end col -->
+					
+					<div class="text-center">
+						<div class="service-widget">
+							<div class="post-media wow fadeIn">
+								<img src="{% static 'images/hydroimg/img9.png' %}" alt="" class="img-fluid img-rounded">
+							</div>
+							<a href="{% url 'hydro' %}"><h3>Hydrophonics</h3></a>
+							<p>Aliquam sagittis ligula et sem lacinia, ut facilisis enim sollicitudin. Proin nisi est, convallis nec purus vitae, iaculis posuere sapien. Cum sociis natoque.From increased yields to resource efficiency, it's time to experience farming like never before.</p>
+						</div><!-- end service -->
+					</div><!-- end col -->
+
+					<div class="text-center">
+						<div class="service-widget">
+							<div class="post-media wow fadeIn">
+								<img src="{% static 'images/Autoplanimg/Mushroom-4.png' %}" alt="" class="img-fluid img-rounded">
+							</div>
+							<a href="{% url 'autoindex' %}"><h3>Autoplanter</h3></a>
+							<p>Step into the future of mushroom cultivation with our cutting-edge Auto Planter. Cultivate a bountiful harvest effortlessly, where precision meets innovation. Elevate your farming experience with a touch of automation. The Auto Planter is designed to make every spore count,</p>
+						</div><!-- end service -->
+					</div><!-- end col -->
+
+					<div class="text-center">
+						<div class="service-widget">
+							<div class="post-media wow fadeIn">
+								<img src="{% static 'images/scafimg/simg3.jpg' %}" alt="" class="img-fluid img-rounded">
+							</div>
+							<a href="{% url 'scafolding' %}"><h3>Scaffolding</h3></a>
+							<p>Elevate your projects with our cutting-edge scaffolding services. We specialize in providing safe, reliable, and customizable scaffolding solutions tailored to meet your unique project requirements. Our expert team ensures efficient installation, adhering to the highest safety standards, and optimizing workflow for increased productivity. </p>
+						</div><!-- end service -->
+					</div><!-- end col -->
+				</div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+   <!-- end section -->
+
+    <div id="support" class="section db">
+        <div class="container">
+            <div class="row">
+                <div id="logo-carousel" class="owl-carousel">
+					<div> <img src="" alt=""> </div>
+					<div> <img src="" alt=""> </div>
+					<div> <img src="" alt=""> </div>
+					<div> <img src="" alt=""> </div>
+					<div> <img src="" alt=""> </div>
+					<div> <img src="" alt=""> </div>
+					<div> <img src="" alt=""> </div>
+					<div> <img src="" alt=""> </div>
+				</div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+	<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <img src="{% static 'images/EEBEDCS.png' %}" width="200px" alt="">
+                        </div>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+				<div class="col-lg-2 col-md-6 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information</h3> 
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Our Products</a></li>
+							<li><a href="#">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="widget clearfix">
+						<div class="widget-title">
+							<h3>Newsletter</h3>
+						</div>
+						<div class="news-box">
+							<form action="#" method="post">
+								<div class="form-group">
+									<input class="form-control" placeholder="Email address" type="email">
+									<button type="submit">
+										<svg id="Layer_11" data-name="Layer 11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.19 17.71">
+											<path class="cls-1" d="M311,387.93a.89.89,0,0,0-1.27,1.26l6.44,6.44H295a.89.89,0,0,0-.89.89.9.9,0,0,0,.89.9h21.24l-6.44,6.42a.91.91,0,0,0,0,1.27.89.89,0,0,0,1.27,0l8-8a.87.87,0,0,0,0-1.25Z" transform="translate(-294.08 -387.67)"></path> </svg>
+									</button>
+								</div>
+							</form>
+						</div>
+						
+                        <div class="widget-title">
+                            <h3>Social</h3>
+                        </div>
+                        <ul class="footer-links social-md">
+                            <li><a class="fb btn-a" title="Facebook" data-tippy-animation="scale" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="tw btn-a" title="Twitter" data-tippy-animation="scale" href="#"><i class="fa fa-twitter"></i> </a></li>
+                            <li><a class="dr btn-a" title="Instagram" data-tippy-animation="scale" href="#"><i class="fa fa-instagram"></i> </a></li>
+                            
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+				<div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">info@yoursite.com</a></li>
+                            <li>Chennai,Tamilnadu</li>
+                            <li>+123456789</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+	
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2024 <a href="#">EEBEDCS</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="{% static 'js/all.js' %}"></script>
+    <!-- ALL PLUGINS -->
+	<script src="{% static 'js/tippy.all.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+	
+	<script src="{% static 'js/jquery.ba-cond.min.js' %}"></script>
+	<script src="{% static 'js/jquery.slitslider.js' %}"></script>
+	<script type="text/javascript">	
+			$(function() {
+			
+				var Page = (function() {
+
+					var $nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slitslider.jump( i + 1 );
+									return false;
+								
+								} );
+								
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+			
+			});
+		</script>
+		
+		<script>
+			tippy('.btn-a')
+		</script>
+</body>
+</html>

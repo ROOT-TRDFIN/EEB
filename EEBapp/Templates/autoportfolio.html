@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.png"/>
+        <title>Autoplanter-Gallery</title>
+
+        <link href="{% static 'css/autoplantercss/scrolling-nav.css' %}" rel="stylesheet" media="all">
+        <!-- Bootstrap core CSS -->
+        <link href="{% static 'css/autoplantercss/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/autoplantercss/magnific-popup.css' %}" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="{% static 'css/autoplantercss/style.css' %}" rel="stylesheet">
+        <link href="{% static 'css/autoplantercss/responsive.css' %}" rel="stylesheet">
+        <script src="{% static 'js/autoplanterjs/jquery.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'js/autoplanterjs/bootstrap.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'js/autoplanterjs/instafeed.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'js/autoplanterjs/custom.js' %}" type="text/javascript"></script>
+    </head>
+    <body id="myPage" style="background-image: url('{% static "images/Autoplanimg/IMG01.png" %}'); background-size:cover;">
+        <div class="section-page-wrap">
+            <div class="share">
+                <div class="icon first facebook"><i class="fa fa-facebook"></i></div>
+                <div class="icon twitter"><i class="fa fa-twitter"></i></div>
+                <div class="icon google-plus"><i class="fa fa-google-plus"></i></div>
+                <div class="icon pinterest last"><i class="fa fa-pinterest-p"></i></div>
+                <div class="label">Share</div>
+            </div>
+            <header class="top-nav-bar">
+                <div id="toggle">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+
+                <div id="menu">
+                    <ul class="menu-view list-unstyled">
+                        <li><a href="{% url 'autoindex' %}"><img src="{% static 'images/Autoplanimg/icons/home-hover.png' %}"></a></li>
+                        <li><a href="{% url 'autoabout' %}"><img src="{% static 'images/Autoplanimg/icons/about.png' %}"></a></li>
+                        <li class="active"><a href="{% url 'autoportfolio' %}"><img src="{% static 'images/Autoplanimg/icons/portfolio.png' %}"></a></li>
+                        <li><a href="{% url 'autocontact' %}"><img src="{% static 'images/Autoplanimg/icons/contact.png' %}"></a></li>  
+                    </ul>
+                </div>
+
+            </header>
+            <div class="banner-full-image">
+                <div class="banner-title">
+                    <h1>Discover the Power of Precision Planting with the Auto Planter</h1>
+                    <a class="btn btn-primary" href="{% url 'autocontact' %}">read more</a>
+                </div>
+            </div>
+
+            <!------------portfolio-------------------->
+            <section id="gallery-block" class="section-padding">
+                <div class="container">
+                    <div class="text-head">
+                        <h2>Gallery</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-12 gallery-list">
+                            <div class="port-image">
+                                <img src="{% static 'images/autoplanimg/Mushroom-5.png' %}" alt="Gallery-Image" class="img-responsive">
+                                <div class="overlay">
+                                    <div class="text"><a href="images/gallery-image1.png" class="image-popup"><img src="{% static 'images/autoplanimg/pin.png' %}"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 gallery-list">
+                            <div class="port-image">
+                                <img src="{% static 'images/autoplanimg/199038164_l.png' %}" alt="Gallery-Image" class="img-responsive">
+                                <div class="overlay">
+                                    <div class="text"><a href="images/gallery-image2.png" class="image-popup"><img src="{% static 'images/autoplanimg/pin.png' %}"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 gallery-list">
+                            <div class="port-image">
+                                <img src="{% static 'images/autoplanimg/Mushroom-2.png' %}" alt="Gallery-Image" class="img-responsive">
+                                <div class="overlay">
+                                    <div class="text"><a href="images/gallery-image3.png" class="image-popup"><img src="{% static 'images/autoplanimg/pin.png' %}"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 gallery-list">
+                            <div class="port-image">
+                                <img src="{% static 'images/autoplanimg/image (1).png' %}" alt="Gallery-Image" class="img-responsive">
+                                <div class="overlay">
+                                    <div class="text"><a href="images/gallery-image4.png" class="image-popup"><img src="{% static 'images/autoplanimg/pin.png' %}"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 gallery-list">
+                            <div class="port-image">
+                                <img src="{% static 'images/autoplanimg/image.png' %}" alt="Gallery-Image' %}" class="img-responsive">
+                                <div class="overlay">
+                                    <div class="text"><a href="images/gallery-image5.png" class="image-popup"><img src="{% static 'images/autoplanimg/pin.png' %}"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 gallery-list">
+                            <div class="port-image">
+                                <img src="{% static 'images/autoplanimg/image (3).png' %}" alt="Gallery-Image" class="img-responsive">
+                                <div class="overlay">
+                                    <div class="text"><a href="images/gallery-image6.png" class="image-popup"><img src="{% static 'images/autoplanimg/pin.png' %}"></a></div>
+                                </div>
+                            </div>
+                        </div>                     
+                    </div>
+                </div>
+            </section>
+            <!--------End------------------>
+
+            
+            <!---footer-->
+            <footer>
+                <div class="container text-center">
+                    <div class="copyright">
+                        &copy; 2024 All right reserved.
+                    </div>
+                </div>
+            </footer>
+            <div id="back-to-top" style="display: none">
+                <i class="fa fa-angle-double-up" aria-hidden="true"></i> Top
+            </div>
+        </div>
+
+        <script src="{% static 'js/autoplanterjs/jquery.magnific-popup.min.js' %}"></script>
+        <script>
+                            jQuery(document).ready(function ($) {
+                                $('.image-popup').magnificPopup({
+                                    type: 'image',
+                                    removalDelay: 300,
+                                    mainClass: 'mfp-with-zoom',
+                                    titleSrc: 'title',
+                                    gallery: {
+                                        enabled: true
+                                    },
+                                    zoom: {
+                                        enabled: true, 
+
+                                        duration: 300, // duration of the effect, in milliseconds
+                                        easing: 'ease-in-out', // CSS transition easing function
+
+                                        opener: function (openerElement) {
+                                            return openerElement.is('img') ? openerElement : openerElement.find('img');
+                                        }
+                                    }
+                                });
+                            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                var myButton = $('#mybutton');
+                var userFeed = new Instafeed({
+                    get: 'user',
+                    userId: '4828631159',
+                    accessToken: '4828631159.1677ed0.79cec29b3ab94404ad45f640b87dc4ef',
+                    limit: '12',
+                    sortBy: 'most-recent',
+                    after: function () {
+                        var images = $("#instafeed").find('a');
+                        $.each(images, function (index, image) {
+                            var delay = (index * 75) + 'ms';
+                            $(image).css('-webkit-animation-delay', delay);
+                            $(image).css('-moz-animation-delay', delay);
+                            $(image).css('-ms-animation-delay', delay);
+                            $(image).css('-o-animation-delay', delay);
+                            $(image).css('animation-delay', delay);
+                            $(image).addClass('animated flipInX');
+                        }); 
+                    },
+                    template: ' <div class="col-md-2 col-sm-3 col-xs-6"><div class="insta-image"><a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div></a></div></div>'
+                });
+                userFeed.run();
+            });
+        </script>
+    </body>
+</html>

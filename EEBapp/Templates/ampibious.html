@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Amphibious Cycle</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">	
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/ampibiouscss/bootstrap.min.css' %}">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/ampibiouscss/style.css' %}">
+<!-- Responsive-->
+<link rel="stylesheet" href="{% static 'css/ampibiouscss/responsive.css' %}">
+<!-- fevicon -->
+<link rel="icon" href="{% static 'images/ampibiouscss/fevicon.png' %}" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="{% static 'css/ampibiouscss/jquery.mCustomScrollbar.min.css' %}" >
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="{% static 'css/ampibiouscss/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/ampibiouscss/owl.theme.default.min.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+</head>
+<body>
+	<!--header section start -->
+<div class="header_section" style="background-image: url('{% static "images/Ampibimg/Enscape_2024-01-03-11-32-30.png" %}');">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="logo"><a href="index.html"><img src="{% static 'images/Ampibimg/trd.png' %}" width="20%" height="20%"></a></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="menu_text">
+                        <ul>
+                            <li><a href="#"><img src="{% static 'images/Ampibimg/user-icon.png' %}"></a></li>
+                            <li><a href="#"><img src="{% static 'images/Ampibimg/search-icon.png' %}"></a></li>
+                            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="{% url 'ampibious' %}">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="ship.html">Product</a>
+                  <a href="contact.html">Contact Us</a>
+                </div>
+                </div>
+                <span  style="font-size:33px;cursor:pointer; color: #ffffff;" onclick="openNav()"><img src="{% static 'images/Ampibimg/toggle-icon.png' %}" class="toggle_menu"></span>
+                </div>  
+                </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!-- header section end -->
+    <!-- banner section start -->
+    <div class="banner_section">
+    <div id="my_carousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators-one">
+    <li data-target="#my_carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#my_carousel" data-slide-to="1" ></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container-fluid">
+    		<div class="taital_main">
+          <h1 class="our_text">&nbsp;</h1>
+          <h2 class="best_text">Seamless</h2>
+          <h2 class="company_text"> Transition</h2>
+          
+          <p class="contrary_text">Embark on a journey were land meets water effortlessly. Our innovative amphibious cycles seamlessly transition between diverse terrains, offering a unique and exhilarating adventure like never before. </p>
+          
+    		    
+    		</div>
+    	</div>
+    	<div class="footer-social-icons">
+            <ul class="social-icons">
+               <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+               <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+               <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+               <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container-fluid">
+    		<div class="taital_main">
+          
+          <h1 class="our_text">&nbsp;</h1>
+          <h2 class="best_text">Unbounded </h2>
+          <h2 class="company_text">Exploration</h2>
+          <p class="contrary_text" >Navigate through rugged trails, conquer challenging terrains, <br>and glide through tranquil waters, <br> unlocking a world of limitless exploration and <br> unparalleled freedom. </p>
+          
+    		</div>
+    	</div>
+    	<div class="footer-social-icons">
+            <ul class="social-icons">
+               <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+               <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+               <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+               <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+            </ul>
+      </div>
+    </div>
+  </div>
+</div>	
+</div>
+    </div>
+    <!-- banner section end -->
+    <!-- about section start -->
+    <div class="about_section layout_padding">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm-4 about_main">
+    				<h1 class="about_text">About <span style="color: #f7566e;">Us</span></h1>
+            <ul class="aboutlist">
+              <li class="dummy_text"><span>The Amphibious Experience Ride Anywhere,</span>Float Everywhere Experience the freedom to pedal on land and glide on water. 
+                Our Amphibious Bicycle is your ticket to unrestricted exploration. From lakes to trails, conquer any path with unparalleled versatility.</li>
+              <li class="dummy_text"><span>Aquatic Adaptability:</span> Transition seamlessly from land to water with the push of a pedal. </li>
+              <li class="dummy_text"><span>Design:</span> Engineered for durability, ensuring a smooth ride both on and off the road. </li>
+              <li class="dummy_text"><span>Effortless Maneuvering:</span> Navigate waterways with ease, thanks to its innovative design. </li>
+            </ul>
+    				
+    			</div> 
+    			<div class="col-sm-8">
+    				<div><img src="{% static 'images/Ampibimg/Cycle with Pontoon.png' %}"></div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <!-- about section end -->
+    
+    <!-- our ships section start -->
+    <div class="ship_section layout_padding" style="background-image: url("{% static 'images/Ampibimg/img-5.png' %}");">
+    	<div class="container">
+        <h1 class="testimonial_text">Photos</h1>
+    		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="image_1"><img src="{% static 'images/Ampibimg/Amphibious bicycle.png' %}" width="56%"></div>
+               </div>
+            <div class="carousel-item">
+                <div class="image_1"><img src="{% static 'images/Ampibimg/Cycle with Pontoon.png' %}" width="56%"></div>
+            </div>
+            <div class="carousel-item">
+               <div class="image_1"><img src="{% static 'images/Ampibimg/Cycle.png' %}" width="56%"></div>
+            </div>
+            <div class="carousel-item">
+               <div class="image_1"><img src="{% static 'images/Ampibimg/Enscape_2024-01-03-11-32-30.png' %}" width="56%"></div>
+            </div>
+            </div>
+            </div>
+    		<div class="seemore_main">
+    			<div class="seemore_bt"><a href="#"></a></div>
+    		</div>
+    		
+    	</div>
+    </div>
+    <!-- our ships section end -->
+    <!-- testimonial section start -->
+    <div class="container-fluid">
+    <div class="testimonial_section">
+    	<div class="row">
+    		<div class="col-sm-12 col-lg-6 padding_0">
+    			<div class="img_6">
+    			    <div class="client_main">
+    			    	<div class="right_main">
+    			    		<div class="luda_text"> Why Choose the<span style="color: #ffffff;"> Amphibious Bicycle ?</span></div>
+                   <p class="choose_text"><span>Dual Terrain Dominance:</span> Conquer both land and water with a single, versatile vehicle. 
+
+                    <p class="choose_text"><span>Adventure Awaits:</span> From urban streets to hidden lakes, your next adventure knows no bounds</p>
+    			    	</div>
+    			    </div>
+    			</div>
+    		</div>
+    		<div class="col-sm-12 col-lg-6 padding_0">
+    			<div class="img_3"><img src="{% static 'images/Ampibimg/Amphibious bicycle.png' %}" style="background-color:#11a420; margin-left:70px" width="87.3%" alt="author"></div>
+    		</div>
+    	</div>
+    </div>
+    </div>
+    <!-- testimonial section end -->
+    <!-- contact section start -->
+    <div class="contact_section layout_padding">
+    	<div class="container">
+    		<h1 class="requst_text">Got Questions? <span style="color: #f7566d;">We've Got Answers</span></h1>
+    		<div class="contact_section_2">
+    			<div class="row">
+    				<div class="col-md-6 padding_0">
+    					<div class="email_box">
+    						<form action="/action_page.php">
+                            <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Your Name" name="Name">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Email" name="Email">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Phone" name="Email">
+                            </div>
+                            <form action="/action_page.php">
+                                <div class="form-group">
+                                  <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="text"></textarea>
+                                </div>
+                            </form>
+                          </form>
+                          <div class="send_bt">
+                          	<div class="send_text"><a href="#">Send</a></div>
+                          </div>
+    					</div>
+    				</div>
+    				<div class="col-md-6 padding_0">
+    					<div class="address_main">
+    						<div class="border_dotted">
+    						<div class="map_text"><img src="{% static 'images/Ampibimg/map-icon.png' %}"><span class="map_icon">Address : Chennai</span></div>
+    						<div class="map_text_2"><img src="{% static 'images/Ampibimg/call-icon.png' %}"><span class="map_icon">Phone :  +(1234) 567 890</span></div>
+    						<div class="map_text_2"><img src="{% static 'images/Ampibimg/email-icon.png' %}"><span class="map_icon">Email :  eebenginee</span></div>
+    						</div>
+    						<h1 class="news_text">Newsletter</h1>
+    						<input type="" class="email_bt" placeholder="Enter your email" name="">
+    						<button class="subscribe_bt"><a href="#">Subscribe</a></button>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <!-- contact section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+    	<div class="container">
+    		<p class="copyright_text">Copyright 2019 All Right Reserved Stay Connected with the Aquabike Community</p>
+    	</div>
+    </div>
+    <!-- copyright section end -->
+
+    <!-- Javascript files-->
+    <script src="{% static 'js//jquery.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+      <script src="{% static 'js/plugin.js' %}"></script>
+      <!-- sidebar -->
+      <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'js/custom.js' %}"></script>
+      <!-- javascript --> 
+      <script src="{% static 'js/owl.carousel.js' %}"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <script>
+      $(document).ready(function(){
+      $(".fancybox").fancybox({
+         openEffect: "none",
+         closeEffect: "none"
+         });
+         
+         $(".zoom").hover(function(){
+         
+         $(this).addClass('transition');
+         }, function(){
+         
+         $(this).removeClass('transition');
+         });
+         });
+         </script> 
+
+
+   <script>
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+   document.getElementById("myNav").style.width = "0%";
+   }
+</script>
+
+
+
+     
+</body>
+</html>

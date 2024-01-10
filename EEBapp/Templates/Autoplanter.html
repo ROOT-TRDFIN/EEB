@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="{% static 'images/favicon.png' %}"/>
+        <title>AUTO-PLANTER</title>
+        <!-- Bootstrap core CSS -->
+        <link href="{% static 'css/autoplantercss/bootstrap.min.css' %}" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="{% static 'css/autoplantercss/style.css' %}" rel="stylesheet">
+        <link href="{% static 'css/autoplantercss/responsive.css' %}" rel="stylesheet">
+        <script src="{% static 'js/autoplanterjs/jquery.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'js/autoplanterjs/bootstrap.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'js/autoplanterjs/custom.js' %}" type="text/javascript"></script>
+
+        <link rel="stylesheet" href="{% static 'css/autoplantercss/font-awesome.min.css' %}">
+    </head>
+    <body id="myPage">
+        
+        <div class="section-page-wrap">
+            <div class="background" style="background-image: url('{% static "images/Autoplanimg/IMG01.png" %}'); background-position:center; background-size:100%; background-repeat:no-repeat">
+            <div id="preloader-container">
+                <div class="preloader">
+                    <span class="bubble-01"></span>
+                    <span class="bubble-02"></span>
+                    <span class="bubble-03"></span>
+                </div>
+            </div>
+
+            <div class="share">
+                <div class="icon first facebook"></div>
+                <div class="icon twitter"></div>
+                <div class="icon google-plus"></div>
+                <div class="icon pinterest last"></div>
+                <div class="label">Share</div>
+            </div>
+
+            <header class="top-nav-bar">
+                <div id="toggle">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+
+                <div id="menu">
+                    <ul class="menu-view list-unstyled">
+                        <li class="active"><a href="{% url 'autoindex' %}"><img src="{% static 'images/Autoplanimg/icons/home-hover.png' %}"></a></li>
+                        <li><a href="{% url 'autoabout' %}"><img src="{% static 'images/Autoplanimg/icons/about.png' %}"></a></li>
+                        <li><a href="{% url 'autoportfolio' %}"><img src="{% static 'images/Autoplanimg/icons/portfolio.png' %}"></a></li>
+                        <li><a href="{% url 'autocontact' %}"><img src="{% static 'images/Autoplanimg/icons/contact.png' %}"></a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="banner-full-image">
+                <div class="banner-title">
+                    <h1>Welcome to the Next Generation of Planting</h1>
+                    <a class="btn btn-primary" href="{% url 'autoabout' %}">read more</a>
+                </div>
+            </div>
+        </div>
+
+            <!---footer-->
+            <footer>
+                <div class="container text-center">
+                    <div class="copyright">
+                        &copy; 2023 All right reserved.
+                </div>
+            </footer>
+            <div id="back-to-top" style="display: none">
+                <i class="fa fa-angle-double-up" aria-hidden="true"></i> Top
+            </div>
+        </div>
+        <script>
+            jQuery(window).load(function () {
+                $('#preloader-container').delay(650).fadeOut('slow')
+                        ;
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.png"/>
+        <title>Autoplanter-Aboutus</title>
+
+        <link href="{% static 'css/autoplantercss/scrolling-nav.css' %}" rel="stylesheet" media="all">
+        <!-- Bootstrap core CSS -->
+        <link href="{% static 'css/autoplantercss/bootstrap.min.css' %}" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="{% static 'css/autoplantercss/style.css' %}" rel="stylesheet">
+        <link href="{% static 'css/autoplantercss/responsive.css' %}" rel="stylesheet">
+        <script src="{% static 'js/autoplanterjs/jquery.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'js/autoplanterjs/bootstrap.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'js/autoplanterjs/custom.js' %}" type="text/javascript"></script>
+    </head>
+    <body id="myPage" >
+        <div class="section-page-wrap">
+            <div class="bg"style="background-image: url('{% static "images/Autoplanimg/IMG01.png" %}'); background-attachment:scroll; background-position:center; background-size:100%;  background-repeat:no-repeat;">
+            <div class="share">
+                <div class="icon first facebook"><i class="fa fa-facebook"></i></div>
+                <div class="icon twitter"><i class="fa fa-twitter"></i></div>
+                <div class="icon google-plus"><i class="fa fa-google-plus"></i></div>
+                <div class="icon pinterest last"><i class="fa fa-pinterest-p"></i></div>
+                <div class="label">Share</div>
+            </div>
+            <header class="top-nav-bar">
+                <div id="toggle">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+
+                <div id="menu">
+                    <ul class="menu-view list-unstyled">
+                        <li><a href="{% url 'autoindex' %}"><img src="{% static 'images/Autoplanimg/icons/home-hover.png' %}"></a></li>
+                        <li class="active"><a href="{% url 'autoabout' %}"><img src="{% static 'images/Autoplanimg/icons/about.png' %}"></a></li>
+                        <li><a href="{% url 'autoportfolio' %}"><img src="{% static 'images/Autoplanimg/icons/portfolio.png' %}"></a></li>
+                        <li><a href="{% url 'autocontact' %}"><img src="{% static 'images/Autoplanimg/icons/contact.png' %}"></a></li>
+                    </ul>
+                </div>
+
+            </header>
+            <div class="banner-full-image">
+                <div class="banner-title">
+                    <h1>Automate Your Mushroom Farming Journey</h1>
+                    <a class="btn btn-primary" href="about.html">read more</a>
+                </div>
+            </div>
+            </div>
+
+            <!-------------About---------->
+            <section id="about" class="section-padding">
+                <div class="container">
+                    <div class="text-head">
+                        <h2>about us</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-7 col-xs-12">
+                            <p class="desc-text">Step into the future of mushroom cultivation with our cutting-edge Auto Planter. Cultivate a bountiful harvest effortlessly, where precision meets innovation. Elevate your farming experience with a touch of automation.</p>
+                            <p class="desc-text offspace-20">The Auto Planter is designed to make every spore count, ensuring a uniform and abundant harvest. Let technology work for you and transform your farm. </p>
+                            <h4 class="user-title" >Why Farmers Love the Auto Planter?</h4><br>
+                            <p class="desc-text offspace-20"><b>Precision Seeding: </b> Planting spores with surgical precision for optimal growth</p>
+                            <p class="desc-text offspace-20"><b>Time-Efficient: </b>Automate your planting process, giving you more time to nurture your farm.</p>
+                            <p class="desc-text offspace-20"><b>Enhanced Yields: </b>Watch your harvest flourish with strategic and automated planting patterns. </p>
+                            <h4 class="user-title"></h4>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 add-space-mobileview">
+                            <div class="image">
+                                <img alt="user-image" class="img-responsive" src="{% static 'images/autoplanimg/image.png' %}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about-review" class="section-padding">
+                <div class="container">
+                    <div class="text-head">
+                        <h2> Sustainability, Performance & Operation.</h2>
+                    </div>
+                    <div class="about-review">
+                        <h2 class="title-default"></h2>
+                        <div class="list-about-review">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-about-review">
+                                        <div class="about-info">
+                                            <h3 class="title14"><a class="black" href="#">Smart Planting Technology: </a></h3>
+                                            <p class="desc">Harness the power of intelligent planting algorithms and robotic precision. AutoPlanter ensures optimal seed placement, spacing, and depth, fostering optimal growth conditions and enhancing overall plant vitality. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-about-review">
+                                        <div class="about-info">
+                                            <h3 class="title14"><a class="black" href="#">Efficiency Redefined:</a></h3>
+                                            <p class="desc">Step into the future of agriculture and landscaping with AutoPlanter. Designed for precision, performance, and sustainability, our advanced planting solutions transform traditional planting methods, optimizing efficiency, and maximizing yield. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-about-review">
+                                        <div class="about-info">
+                                            <h3 class="title14"><a class="black" href="#">Resource Optimization: </a></h3>
+                                            <p class="desc">Embrace sustainable practices with AutoPlanter. By optimizing seed placement and minimizing resource wastage, our advanced planting solutions contribute to water conservation, soil health, and overall environmental sustainability. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-about-review last-item">
+                                        <div class="about-info">
+                                            <h3 class="title14"><a class="black" href="#">Versatile Applications: </a></h3>
+                                            <p class="desc">From farmers and landscapers to horticultural enthusiasts, AutoPlanter offers versatile applications tailored to diverse user needs, ensuring optimal performance, versatility, and adaptability across various planting environments and scenarios. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!---footer-->
+            <footer>
+                <div class="container text-center">
+                    <div class="copyright">
+                        &copy; 2024 All right reserved.
+                    </div>
+                </div>
+            </footer>
+            <div id="back-to-top" style="display: none">
+                <i class="fa fa-angle-double-up" aria-hidden="true"></i> Top
+            </div>
+        </div>
+    </body>
+</html>

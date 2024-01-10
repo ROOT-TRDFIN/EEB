@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" class="no-js"> 
+    <head>
+    	<!-- meta charec set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- Page Title -->
+        <title>HYDROPONICS</title>		
+		<!-- Meta Description -->
+        <meta name="description" content="Blue One Page Creative HTML5 Template">
+        <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Google Font -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+		<!-- CSS
+		================================================== -->
+		<!-- Fontawesome Icon font -->
+		<link rel="stylesheet" href="{% static 'css/hydrocss/font-awesome.min.css' %}">
+		
+		<link rel="stylesheet" href="{% static 'css/hydrocss/font-awesome.css' %}">
+		<!-- Twitter Bootstrap css -->
+        <link rel="stylesheet" href="{% static 'css/hydrocss/bootstrap.min.css' %}">
+		<!-- jquery.fancybox  -->
+        <link rel="stylesheet" href="{% static 'css/hydrocss/jquery.fancybox.css' %}">
+		<!-- animate -->
+        <link rel="stylesheet" href="{% static 'css/hydrocss/animate.css' %}">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="{% static 'css/hydrocss/main.css' %}">
+		<!-- media-queries -->
+        <link rel="stylesheet" href="{% static 'css/hydrocss/media-queries.css' %}">
+
+		
+
+		<!-- Modernizer Script for old Browsers -->
+        <script src="{% static 'js/hydrojs/modernizr-2.6.2.min.js' %}"></script>
+
+    </head>
+	
+    <body id="body">
+	
+		<!-- preloader -->
+		<div id="preloader">
+			<img src="{% static 'images/hydroimg/preloader.gif' %}" alt="Preloader">
+		</div>
+		<!-- end preloader -->
+
+        <!-- 
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-fixed-top navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-2x"></i>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+                    <a class="navbar-brand" href="#body">
+						<h1 id="logo">
+							<img src="{% static 'images/hydroimg/trd.png' %}" width="225px" alt="EEBEDCS">
+						</h1>
+					</a>
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="current"><a href="#body">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#works">Work</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		
+		
+        <!--
+        Home Slider
+        ==================================== -->
+		
+		<section id="slider">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			
+				<!-- Indicators bullet -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				</ol>
+				<!-- End Indicators bullet -->				
+				
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					
+					<!-- single slide -->
+					<div class="item active" style="background-image: url('{% static 'images/hydroimg/img2.png' %}');">
+						<div class="carousel-caption">
+							<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> EEBEDCS</span>!</h2>
+							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">/Unleash the Potential</span>  Hydroponic Innovation .</h3>
+							<p data-wow-duration="1000ms" class="wow slideInRight animated">We are a team of professionals</p>
+							
+							<ul class="social-links text-center">
+								<li><a href=""><i class="fas fa-twitter fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-instagram fa-lg"></i></a></li>
+								
+							</ul>
+						</div>
+					</div>
+					<!-- end single slide -->
+					
+					<!-- single slide -->
+					<div class="item" style="background-image: url('{% static 'images/hydroimg/img20.jpeg' %}') ;">
+						<div class="carousel-caption">
+							<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> Team</span>!</h2>
+							<h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span class="color">/creative</span> Hydroponic Revolution.</h3>
+							<p data-wow-duration="500ms" class="wow slideInRight animated">We are a team of professionals</p>
+							
+							<ul class="social-links text-center">
+								<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-instagram fa-lg"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end single slide -->
+					
+				</div>
+				<!-- End Wrapper for slides -->
+				
+			</div>
+		</section>
+		
+        <!--
+        End Home SliderEnd
+        ==================================== -->
+		
+        <!--
+        Features
+        ==================================== -->
+		
+		<section id="features" class="features">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+						<h2>Beyond Soil Cultivation</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
+
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-tree fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Optimized Growth</h3>
+								<p>Experience accelerated growth rates, increased yields, and enhanced plant vitality as hydroponics provides plants with direct access to essential nutrients, oxygen, and water, 
+									fostering optimal growth conditions and maximizing productivity. </p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+					
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fas fa-bullseye fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Water Conservation</h3>
+								<p>Embrace eco-friendly cultivation practices with hydroponics. By recycling and reusing nutrient solutions, hydroponics significantly reduces water consumption, 
+									promoting environmental sustainability and responsible resource management</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+					
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-cloud fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Space-Efficient Cultivation</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+						
+				</div>
+			</div>
+		</section>
+		
+        <!--
+        End Features
+        ==================================== -->
+		
+		
+        <!--
+        Our Works
+        ==================================== -->
+		
+		<section id="works" class="works clearfix">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center">
+						<h2>Works</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
+					
+					<div class="sec-sub-title text-center">
+						<p>Welcome to the future of farming! Our Hydroponic Innovation is here to redefine the way you grow. Say goodbye to soil constraints and embrace a smarter, more efficient way to cultivate. Get ready to unlock a new era of bountiful harvests. </p>
+					</div>
+					
+					<div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
+						<ul class="text-center">
+							<li><a href="javascript:;" data-filter="all" class="active filter">All</a></li>
+							<li><a href="javascript:;" data-filter=".branding" class="filter">Wicking systems</a></li>
+							<li><a href="javascript:;" data-filter=".web" class="filter">Deep Water Culture</a></li>
+							<li><a href="javascript:;" data-filter=".logo-design" class="filter">Nutrient Film Technique </a></li>
+							<li><a href="javascript:;" data-filter=".photography" class="filter">Aeroponics</a></li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			
+		<div class="project-wrapper">
+			<div class="container-fluid">
+				<figure class="mix work-item branding">
+					<img src="{% static 'images/hydroimg/img4.png' %}" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/img/img4.png"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Smart Farming for Modern Growers </h4>
+						<p>Wicking systems</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="mix work-item web">
+					<img src="{% static 'images/hydroimg/img6.png' %}" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/img/img6.png"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Smart Farming for Modern Growers </h4>
+						<p>Deep Water Culture</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="mix work-item logo-design">
+					<img src="{% static 'images/hydroimg/item-1.png' %}" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/img/item-1.png"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Smart Farming for Modern Growers </h4>
+						<p>Nutrient Film Technique</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="mix work-item photography">
+					<img src="{% static 'images/hydroimg/img8.png' %}" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/img/img8.png"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Smart Farming for Modern Growers </h4>
+						<p>Aeroponics</p>
+					</figcaption>
+				</figure>
+			
+				<figure class="mix work-item branding">
+					<img src="{% static 'images/hydroimg/img9.png' %}" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/img/img9.png"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Smart Farming for Modern Growers </h4>
+						<p>Wicking systems</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="mix work-item web">
+					<img src="{% static 'images/hydroimg/img7.png' %}" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/img/img7.png"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Smart Farming for Modern Growers m</h4>
+						<p>Deep Water Culture</p>
+					</figcaption>
+				</figure>
+				
+				
+			</div>
+		
+
+		</section>
+		
+        <!--
+        End Our Works
+        ==================================== -->
+		
+        <!--
+        Meet Our Team
+        ==================================== -->		
+		
+		<section id="team" class="team">
+			<div class="container">
+				<div class="row">
+		
+					<div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
+						<h2> Cultivate Success, Elevate Your Harvest</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
+					
+					<div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
+						<p>Harness the power of automated hydroponic systems, tailored to optimize nutrient delivery, lighting, and environmental conditions, ensuring consistent growth, robust yields, and superior crop quality. </p>
+					</div>
+
+				
+					<div class="video">
+						<video id="background-video" autoplay muted loop width="60%">
+                            <source src="{% static 'images/hydroimg/Untitled design.mp4' %}" type="video/mp4" >
+                        </video>
+					</div>
+				
+					
+					
+				</div>
+			</div>
+		</section>
+		
+        <!--
+        End Meet Our Team
+        ==================================== -->
+		
+		
+		
+		<!--
+        Contact Us
+        ==================================== -->		
+		
+		<section id="contact" class="contact">
+			<div class="container">
+				<div class="row mb50">
+				
+					<div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
+						<h2>Let’s Discuss</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
+					
+					<div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
+						<p>Join a thriving community of hydroponic enthusiasts, innovators, and experts. Share insights, exchange knowledge, and collaborate with like-minded individuals passionate about cultivating a brighter, more sustainable future with hydroponics. </p>
+					</div>
+					
+					<!-- contact address -->
+					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
+						<div class="contact-address">
+							<h3>"Hydroponic Innovation is a game-changer."</h3>
+							<p>5/375, S. Kolathur, Indirapuri, Kovilambakkam</p>
+							<p>Chennai,TAMIL NADU, INDIA</p>
+							<p>+91 ##########</p>
+						</div>
+					</div>
+					<!-- end contact address -->
+					
+					<!-- contact form -->
+					<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
+						<div class="contact-form">
+							<h3>Say hello!</h3>
+							<form action="#" id="contact-form">
+								<div class="input-group name-email">
+									<div class="input-field">
+										<input type="text" name="name" id="name" placeholder="Name" class="form-control" autocomplete="off">
+									</div>
+									<div class="input-field">
+										<input type="email" name="email" id="email" placeholder="Email" class="form-control" autocomplete="off">
+									</div>
+								</div>
+								<div class="input-group">
+									<textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
+								</div>
+								<div class="input-group">
+									<input type="submit" id="form-submit" class="pull-right" value="Send message">
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- end contact form -->
+					
+					<!-- footer social links -->
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
+						<ul class="footer-social">
+							<li><a href="https://www.twitter.com/"><i class="fa fa-twitter fa-2x"></i></a></li>
+							<li><a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x"></i></a></li>
+						</ul>
+					</div>
+					<!-- end footer social links -->
+					
+				</div>
+			</div>
+			
+			<!-- Google map -->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4590402740246!2d80.19058831088903!3d12.9424519154635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d69c8bb930b%3A0xebde4ae0e53760cd!2sEEB%20Engineering%20Design%20and%20Consultancy%20Services%20(EEBEDCS)!5e0!3m2!1sen!2sin!4v1703826552514!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+			</iframe>
+			
+			<!-- End Google map -->
+			
+		</section>
+		
+        <!--
+        End Contact Us
+        ==================================== -->
+		
+		
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div class="row">
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
+						<div class="footer-single">
+							<img src="{% static 'images/hydroimg/trd.png' %}" width="90%" alt="">
+							<p>"Love the year-round growing. It's like having seasons under your control!"</p>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+						<div class="footer-single">
+							<h6>Subscribe </h6>
+							<form action="#" class="subscribe">
+								<input type="text" name="subscribe" id="subscribe">
+								<input type="submit" value="&#8594;" id="subs">
+							</form>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="footer-single">
+							<h6>Explore</h6>
+							<ul>
+								<li><a href="#">Inside Us</a></li>
+								<li><a href="#">Google</a></li>
+								
+							</ul>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="footer-single">
+							<h6>Support</h6>
+							<ul>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<p class="copyright text-center">
+							Copyright © 2023. All rights reserved.
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
+
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="{% static 'js/hydrojs/jquery-1.11.1.min.js' %}"></script>
+		<!-- Single Page Nav -->
+        <script src="{% static 'js/hydrojs/jquery.singlePageNav.min.js' %}"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="{% static 'js/hydrojs/bootstrap.min.js' %}"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="{% static 'js/hydrojs/jquery.fancybox.pack.js' %}"></script>
+		<!-- jquery.mixitup.min -->
+        <script src="{% static 'js/hydrojs/jquery.mixitup.min.js' %}"></script>
+		<!-- jquery.parallax -->
+        <script src="{% static 'js/hydrojs/jquery.parallax-1.1.3.js' %}"></script>
+		<!-- jquery.countTo -->
+        <script src="{% static 'js/hydrojs/jquery-countTo.js' %}"></script>
+		<!-- jquery.appear -->
+        <script src="{% static 'js/hydrojs/jquery.appear.js' %}"></script>
+		<!-- Contact form validation -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+		<!-- Google Map -->
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<!-- jquery easing -->
+        <script src="{% static 'js/hydrojs/jquery.easing.min.js' %}"></script>
+		<!-- jquery easing -->
+        <script src="{% static 'js/hydrojs/wow.min.js' %}"></script>
+		<script>
+			var wow = new WOW ({
+				boxClass:     'wow',      // animated element css class (default is wow)
+				animateClass: 'animated', // animation css class (default is animated)
+				offset:       120,          // distance to the element when triggering the animation (default is 0)
+				mobile:       false,       // trigger animations on mobile devices (default is true)
+				live:         true        // act on asynchronously loaded content (default is true)
+			  }
+			);
+			wow.init();
+		</script> 
+		<!-- Custom Functions -->
+        <script src="{% static 'js/hydrojs/custom.js' %}"></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				/* ========================================================================= */
+				/*	Contact Form
+				/* ========================================================================= */
+				
+				$('#contact-form').validate({
+					rules: {
+						name: {
+							required: true,
+							minlength: 2
+						},
+						email: {
+							required: true,
+							email: true
+						},
+						message: {
+							required: true
+						}
+					},
+					messages: {
+						name: {
+							required: "come on, you have a name don't you?",
+							minlength: "your name must consist of at least 2 characters"
+						},
+						email: {
+							required: "no email, no message"
+						},
+						message: {
+							required: "um...yea, you have to write something to send this form.",
+							minlength: "thats all? really?"
+						}
+					},
+					submitHandler: function(form) {
+						$(form).ajaxSubmit({
+							type:"POST",
+							data: $(form).serialize(),
+							url:"process.php",
+							success: function() {
+								$('#contact-form :input').attr('disabled', 'disabled');
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$(this).find(':input').attr('disabled', 'disabled');
+									$(this).find('label').css('cursor','default');
+									$('#success').fadeIn();
+								});
+							},
+							error: function() {
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$('#error').fadeIn();
+								});
+							}
+						});
+					}
+				});
+			});
+		</script>
+    </body>
+</html>
