@@ -34,8 +34,8 @@ def domeservices(request):
     return render(request,'domservices.html')
 
 #Autoplanter
-def autoindex(request):
-    return render(request,'autoplanter.html')
+def autoplanterindex(request):
+    return render(request,'Autoplanter.html')
 
 def autoabout(request):
     return render(request,'autoabout.html')
